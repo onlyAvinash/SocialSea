@@ -1,3 +1,17 @@
+#Social Media Webapp
+
+This is a social media webapp built using React and Firebase. It allows users to create an account, connect with friends, and share posts and comments.
+
+Features include:
+
+    User authentication and authorization using Firebase
+    Real-time database for storing user data and posts
+    File storage for storing user profile pictures and post images
+    Hosting on Firebase hosting for easy deployment
+
+To run this app locally, clone the repository and install the dependencies by running npm install. Then, create a Firebase project and add the necessary configuration files. Finally, start the development server with 
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
