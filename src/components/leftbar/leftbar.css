@@ -1,0 +1,197 @@
+.leftbar{
+    flex: 3;
+   /* height: calc(200vh - 70px); */
+   /* overflow-y: scroll; */
+   
+}
+.leftSingleBar{
+    position: sticky;
+    top: 8%;
+}
+
+.leftbarWrapper{
+    position: sticky;
+    top: 70px;
+   width: 60%;
+   /* height: ; */
+   background-color: rgb(255, 255, 255);
+   margin-top: 15%;
+   margin-left: 15%;
+   padding: 15px;
+   border-radius: 10px;
+   box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+   
+}
+.leftbarUserImg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    position: absolute;
+    top: -15%;
+    left: 36%;
+    
+    object-fit: cover;
+    transition: .5s ease-in-out all;
+
+}
+.leftbarUserImgScnd{
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    margin-top: -2%;
+    margin-bottom: -7%;
+    object-fit: cover;
+    transition: .5s ease-in-out all;
+}
+.userInfo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+   
+}
+.userName{
+    margin-top: 12%;
+    margin-bottom: 5%;
+    font-size: 20px;
+    font-weight: 700;
+}
+.userBtn{
+    border-radius: 5px;
+    font-size: small;
+   margin-top: -2%;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+   background-color: white;
+   box-shadow: 5px 4px 12px -6px rgba(0, 0, 0, 5);
+    border: none;
+    color: #1775ee;
+    font-weight: 600;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: .3s ease-out;
+}
+
+.userBtn:hover{
+    background-color: rgb(235, 235, 235);
+    transform: scale(1.2);
+}
+
+.userInfoScnd{
+    color: rgb(137, 137, 137);
+    font-size: 14px;
+    font-weight: 500;
+   word-spacing: 2px;
+  
+
+}
+.location{
+  margin-top: 10px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 500;
+   align-items: center;
+    padding: 2px;
+}
+.locationName{
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    color: rgb(69, 69, 69);
+}
+.locationName:hover{
+    color: rgb(72, 72, 72);
+    font-weight: 500;
+}
+
+.link{
+    margin-top: -.1rem;
+}
+
+/* this is second div inside a leftbar */
+.leftbarWrapperbottom{
+    width: 60%;
+    margin-left: 15%;
+    margin-top: 5%;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    border-radius: 10px;
+    position: sticky;
+    top: 52%;
+}
+.leftbarBottomTittle{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    padding: 5px;
+}
+.leftbarBottomPicName{
+    margin-left: 5%;
+font-weight:700;
+    font-size: 15px;
+    margin-right: 5%;
+    color: #1775ee;
+}
+
+.photos{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-between; 
+   margin-top: 10px;
+   padding: 5px;
+   
+}
+
+.pic{
+    height: 50px;
+    width: 50px;
+    object-fit:cover;
+    border-radius: 7px;
+    margin-top: 10px;
+    padding: 2.2px;
+   
+}
+.pic-one{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 15px;
+   
+}
+
+@media screen and (max-width: 1376px) {
+    .pic{
+      /* display: none; */
+      height: 38px;
+      width: 38px;
+    }
+    .leftbarShow{
+        margin-bottom: -10px;
+
+    }
+    .leftbarWrapperbottom{
+        margin-top: 10%;
+    }
+}
+
+.leftbarShow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 4px;
+}
+.more{
+    color: #1775ee;
+    cursor: pointer;
+    font-size: 27px !important;
+  
+
+}

@@ -1,0 +1,200 @@
+
+
+.login{
+  height: 100vh;
+  background-color: rgb(209, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background: linear-gradient(rgba(120, 120, 120, 0.659), rgba(0, 0, 0, 0.807)), url("/public/images/card/1.jpg") center; */
+
+  /* background-size:contain; */
+  background-color: #e5e5f7;
+ opacity: 01;
+background-image: radial-gradient(#209ae6 0.8px, #e5f0f7 0.8px);
+background-size: 16px 16px;
+ 
+}
+
+.card{
+    display: flex;
+    background-color: aliceblue;
+    width: 50%;
+    border-radius: 10px;
+    min-height: 500px;
+    box-shadow:  6px 10px 20px -4px rgba(0, 0, 0, 0.68);
+    overflow: hidden;
+}
+
+.left{
+
+    flex:1;
+    background:  linear-gradient(rgba(8, 106, 121, 0.455),rgba(99, 99, 99, 0.822) ), url("https://images.pexels.com/photos/7150075/pexels-photo-7150075.jpeg?auto=compress&cs=tinysrgb&w=600")  center;
+    background-size: cover;
+    
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+.leftLogo{
+    font-size: 100px;
+    line-height: 85px;
+    
+    color: #2a9eeb;
+    font-family: 'Leckerli One', cursive;
+      text-shadow: 5px 2px 1px rgb(255, 255, 255);
+}
+.leftDesc{
+    color: white;
+    font-weight: 500;
+      text-shadow: 1px 1px 4px rgb(47, 47, 47);
+
+    
+ }
+
+ .leftAlert{
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 1px 1px 4px rgb(42, 41, 41);
+
+ }
+.leftButton{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    }
+
+.leftButton:hover
+    {
+        background-color: rgb(229, 229, 229);
+        transform: scale(1.1) translateX(10px);
+        border-radius: 3px;
+    }
+
+.leftButtonScnd{
+    width: 50%;
+    padding: 10px;
+    border: 2px solid red;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    transition: .5s ease-out all;
+    transform: scale(1.2) translateX(30px);
+    
+}
+
+.leftButtonScnd:hover
+    {
+        background-color: rgb(229, 229, 229);
+        transform: scale(1.3) translateX(30px);
+        border-radius: 3px;
+    }
+    
+
+
+.right{
+
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+
+}
+
+.rightLogo{
+    color: rgb(121, 121, 121);
+    
+}
+
+.rightForm{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+}
+
+.rightFormInput,.rightFormInputTwo{
+    border: none;
+    border-bottom: 1px solid lightgray;
+    padding: 20px 10px;
+    background:none;
+    outline: none;
+
+    
+}
+
+
+.label{
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+    position: absolute;
+    top:2.5vh;
+    left: 1.3vh;
+   transition: .3s ease-out;
+
+}
+.labelTwo{
+    font-size: 14px;
+    color: gray;
+    position: absolute;
+   top: 13.8vh;
+   left: 1.3vh;
+   font-weight: 500;
+   transition: top .3s ease-out;
+}
+.rightFormInput:focus + .label,
+.rightFormInput:not(:placeholder-shown) + .label{
+   top: -0.4vh;
+   font-size: 13px;
+
+}
+.rightFormInputTwo:focus + .labelTwo, 
+.rightFormInputTwo:not(:placeholder-shown) + .labelTwo{
+    top: 11vh;
+    font-size: 13px;
+ 
+ }
+ 
+
+
+.wrongText{
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.wrongTextScnd{
+    font-size: 14px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    display: none;
+}
+.rightButton{
+    width: 50%;
+    padding: 10px;
+    border: none;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s ease all;
+
+}
+.rightButton:hover
+    {
+        background-color: rgb(149, 149, 149);
+        transform: scale(1.1) translateX(10px);
+        border-radius: 3px;
+    }
+  

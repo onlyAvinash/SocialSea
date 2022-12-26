@@ -1,0 +1,62 @@
+
+.rightbarFriend{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    transition: 0.2s ease-in-out all;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.rightbarFriend:hover{
+    background-color: rgb(233, 233, 233);
+    /* height: 30px; */
+    transform: scaleX(0.9);
+}
+
+.rightbarProfileImgContainer{
+   
+    margin-right: 10px;
+    position: relative;
+    
+   
+}
+
+.rightbarProfileImg{
+   
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.rightbarOnline{
+    width: 5px;
+    height: 5px;
+    
+    border-radius: 50%;
+    background-color:#3ea6ff;
+    border: #f1f1f1;
+    position: relative ;
+    /* margin-left: -10px; */
+    /* top: -10px; */
+    left: -10vh;
+    /* right: ; */
+    border: 2px solid white;
+
+}
+
+.rightbarUsername{
+    font-weight: 500;
+    flex: 2;
+    margin-left: 2vh;
+}
+
+@media only screen and (max-width: 1500px) {
+    .rightbarOnline {
+        left: -8vh;
+
+    }
+    
+     
+  }

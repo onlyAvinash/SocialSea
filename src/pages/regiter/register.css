@@ -1,0 +1,204 @@
+
+
+
+
+.register{
+    height: 100vh;
+    background-color: rgb(209, 233, 233);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e5e5f7;
+    opacity: 01;
+   background-image: radial-gradient(#209ae6 0.8px, #e5f0f7 0.8px);
+   background-size: 16px 16px;
+   
+  }
+  
+  .card{
+      display: flex;
+      flex-direction: row-reverse;
+      background-color: aliceblue;
+      width: 50%;
+      border-radius: 10px;
+      min-height: 500px;
+      box-shadow:  -8px 10px 20px -5px rgba(0, 0, 0, 0.68);
+      overflow: hidden;
+  }
+  
+  .left{
+  
+      flex:1;
+      background: linear-gradient(rgba(8, 106, 121, 0.455),rgba(77, 77, 77, 0.822) ), url("https://images.pexels.com/photos/8531237/pexels-photo-8531237.jpeg?auto=compress&cs=tinysrgb&w=600")  center;
+      background-size: cover;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      
+  }
+  .leftLogo{
+      font-size: 100px;
+      line-height: 85px;
+      color: white;
+      
+    color: #209CEE;
+    font-family: 'Leckerli One', cursive;
+      text-shadow: 5px 2px 1px rgb(255, 255, 255);
+  }
+  .leftDesc{
+      color: white;
+      text-shadow: 1px 1px 4px black;
+      font-weight: 500;
+      
+   }
+  
+   .leftAlert{
+      font-size: 14px;
+      color: white;
+      cursor: pointer;
+     
+   }
+  .leftButton{
+      width: 50%;
+      padding: 10px;
+      border: none;
+      background-color: white;
+      color: rgb(0, 0, 0);
+      font-weight: 500;
+      cursor: pointer;
+      position: relative;
+      top: -20px;
+      transition: .2s ease-in-out;
+    }
+
+    .leftButton:hover
+    {
+        background-color: rgb(229, 229, 229);
+        transform: scale(1.1) translateX(10px);
+        border-radius: 3px;
+    }
+  
+  
+  .right{
+  
+      flex: 1;
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+  
+  }
+  
+  .rightLogo{
+      color: rgb(121, 121, 121);
+
+      
+  }
+  
+  .rightForm{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      position: relative;
+  }
+  
+  .rightFormInput,.rightFormInputScnd,.rightFormInputThird{
+      border: none;
+      border-bottom: 1px solid lightgray;
+      margin-top: 20px;
+      /* padding: 20px 10px; */
+      background:none;
+      /* background-color: aqua; */
+      outline:none;
+      padding: 10px 8px;
+      font-size: 1rem;
+      font-weight: 500;
+     
+    }
+   
+    .labelFirst{
+        position: absolute;
+        top:4vh;
+        left: 1.2vh;
+        font-size: 14px;
+        font-weight: 500;
+        color: gray;
+        transition: .3s ease-out ;
+        
+    }
+    
+    
+    .labelScnd
+    {
+        color: gray;
+        position: absolute;
+        top:16vh;
+        left: 1.2vh;
+        font-size: 14px;
+        font-weight: 500;
+        transition: .3s ease-out ;
+        
+    }
+    
+    .labelThird
+    {
+        color: gray;
+        font-size: 14px;
+        font-weight: 500;
+        position: absolute;
+        top: 27vh;
+    
+        left: 1.2vh;
+        transition: .3s ease-out ;
+    }
+.rightFormInput:focus + .labelFirst,
+.rightFormInput:not(:placeholder-shown) + .labelFirst
+{
+    top: 1vh;
+    font-size: 13px;
+}
+.rightFormInputScnd:focus + .labelScnd,
+.rightFormInputScnd:not(:placeholder-shown) + .labelScnd
+{
+    top: 12vh;
+    font-size: 13px;
+}
+.rightFormInputThird:focus + .labelThird,
+.rightFormInputThird:not(:placeholder-shown) + .labelThird
+{
+    top: 24vh;
+    font-size: 13px;
+}
+
+
+.rightButton
+  {
+      width: 50%;
+      padding: 10px;
+      border: none;
+      background-color: gray;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: .3s ease all;
+  }
+
+  .rightButton:hover
+    {
+        background-color: rgb(149, 149, 149);
+        transform: scale(1.1) translateX(10px);
+        border-radius: 3px;
+    }
+  
+    @media only screen and (max-width: 1500px) {
+        .labelThird {
+          top: 28vh;
+        }
+        .rightFormInputThird:focus + .labelThird,
+        .rightFormInputThird:not(:placeholder-shown) + .labelThird
+        {
+            top: 26vh;
+        }   
+      }

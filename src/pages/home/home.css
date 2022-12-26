@@ -1,0 +1,14 @@
+.homeWrapper{
+    display: flex;
+    padding: 2px;
+}
+.leftPage{
+    flex: 3;
+}
+.rightPage{
+    flex: 8;
+    display: flex;
+    margin-left: 10vh;
+    margin-right: 5vh;
+    margin-top: 2vh;
+}

@@ -1,0 +1,85 @@
+.rightbar{
+    flex: 9;
+   /* background-color: #000;
+    color: #fff;
+    opacity: .3; */
+}
+.rightbarWrapper{
+  
+  padding: 10px;
+   
+}
+.rightbarTop{
+   display: flex;
+   color: rgb(55, 55, 55);
+  margin-top: 3.7%;
+ 
+  
+}
+.rightbarAbout{
+    flex: 8;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    background-color: rgb(255, 255, 255);
+    padding: 2%;
+   
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+   
+}
+.rightbarTopIcons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-out all;
+
+}
+.rightbarTopIcons:hover{
+  transform: scale(1.1);
+}
+
+.rightbarTopText{
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.rightbarHelp{
+    flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+    
+}
+.rightbarTopHelpIcons{
+
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    margin-left: 10%;
+    border-radius: 50px;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+    transition: .2s ease-out all;
+
+}
+.rightbarTopHelpIcons:hover{
+    transform: scale(1.1) translateX(2px);
+    
+}
+
+
+.helpIcon{
+  font-size: 21px !important;
+}
+.rightbarBottom{
+    display: flex;
+    color: black;
+   margin-top: 3.7%;
+  
+   
+ }

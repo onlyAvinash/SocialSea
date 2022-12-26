@@ -1,0 +1,134 @@
+.leftpageWrapper{
+    height: calc( 100vh - 100px);
+    position: sticky;
+    top: 73px;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: 20%;
+}
+
+::-webkit-scrollbar{
+    width: 5px;
+    -moz-width:5px;
+}
+
+
+::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+    -moz-background-color: #f1f1f1;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(179, 179, 179);
+    -moz-background-color: rgb(179, 179, 179);
+
+    
+} 
+.coverImage{
+    height: 20%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    cursor: pointer;
+    /* margin-right: 100px; */
+}
+.coverImage:hover .homeCoverImg{
+    transform: translateY(10px) scale(0.9);
+   
+}
+.coverImage:hover .homeCoverProfile{
+    transform: translateY(-2px) scale(0.9);
+}
+
+.homeCoverImg{
+    transition: 0.2s ease-in-out all;
+    width: 100%;
+    height: 80%;
+     /* position: relative; 
+    top: 0;  */
+    object-fit: cover;
+    opacity: .9;
+    border-radius: 8px;
+    margin-right: 100px
+    
+}
+.homeCoverProfile{
+    transition: 0.2s ease-in-out all;
+
+    width: 67px;
+    height: 67px;
+    cursor: pointer;
+    position: absolute;
+    top: 9vh;
+    right: 15vh;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.sidebarList{
+    padding: 0; /*ul tag containes padding and margin by default*/
+    margin: 0;
+    list-style:none;
+    margin-top: 10px;
+}
+
+.sidebarListItem{
+   display: flex;
+   align-items: center;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   height: 30px;
+   cursor: pointer;
+   transition: 0.2s ease-in-out all;
+}
+
+.sidebarListItem:hover{
+    background-color: rgb(233, 233, 233);
+    /* height: 30px; */
+    transform: scaleX(0.9);
+}
+
+.sidebarIcon{
+   margin-right: 15px;
+}
+
+.sidebarButton{
+   width: 150px;
+   border: none;
+   padding: 8px;
+   border-radius: 5px;
+   font-weight: 600;
+   font-size: 17px;
+   color: #1775ee;
+   cursor: pointer;
+   transition: 0.4s ease-in-out all;
+}
+.sidebarButton:hover{
+   width: 80%;
+   transform: scale(1);
+   background-color: rgb(184, 181, 181);
+
+}
+
+
+
+.sidebarHr{
+    margin: 20px 0; /*top-bottom= 20 r-l=0*/
+   margin-right: 20%;
+  
+}
+
+.rightbarFriendList{
+    padding: 0;
+    margin: 0; /*dnt frget to add p and m=0 coz ul tag default has this value set*/
+    list-style: none;
+}
+
+@media only screen and (max-width: 1500px) {
+    .homeCoverProfile {
+      right: 14vh;
+    }
+    .leftpageFunction{
+        margin-top: 20px;
+    }
+  }
