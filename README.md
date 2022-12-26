@@ -1,4 +1,4 @@
-#Social Media Webapp
+# Social Media Webapp
 
 This is a social media webapp built using React and Firebase. It allows users to create an account, connect with friends, and share posts and comments.
 
